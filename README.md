@@ -39,19 +39,19 @@ MyShell does not support any other special characters (in particular, special ch
 ## Commands Supported
 
 ### exit: 
-  * Terminate the shell
+Terminate the shell
 ### cd: 
-  * change the current working directory. Syntax: cd dir. dir is the directory where the user wants to change to. If dir starts with a slash (/"), dir is an absolute path. Otherwise, dir is a path related to the current directory.
+change the current working directory. Syntax: cd dir. dir is the directory where the user wants to change to. If dir starts with a slash (/"), dir is an absolute path. Otherwise, dir is a path related to the current directory.
 ### pwd: 
-  * print the absolute path of the current working directory
+print the absolute path of the current working directory
 
 ### set: 
-  * set the value of the environment variables. You only need to support one environment value MYPATH, which is the search path for the external command you implement (see below). 
-    ** Syntax: set MYPATH=path1:path2...
+set the value of the environment variables. You only need to support one environment value MYPATH, which is the search path for the external command you implement (see below). 
+* Syntax: set MYPATH=path1:path2...
     
 ### myls: 
-  * list files under a directory. The output format should be similar to "ls -l".
-  * Implemented this command via file and directory access functions. In order for your shell to locate this command, it will search the MYPATH variable.
+List files under a directory. The output format should be similar to "ls -l".
+Implemented this command via file and directory access functions.
 
 Your shell should also terminate if end of file character (CTRL-D) is encountered.
 
