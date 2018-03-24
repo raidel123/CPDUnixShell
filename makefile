@@ -1,10 +1,10 @@
 all: myshell myls
 
 myshell: main.c
-	gcc -Wall -pedantic -o $@ $<
+	gcc -w -o $@ $<
 
 myls: myls.c
-	gcc -Wall -pedantic -o $@ $<
+	gcc -w -o $@ $<
 
 clean:
 	rm myshell myls;

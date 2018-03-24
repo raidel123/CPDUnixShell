@@ -1,6 +1,10 @@
 # Prerequisites
 *.d
 
+# executables
+myshell
+myls
+
 # Object files
 *.o
 *.ko
